@@ -1,0 +1,15 @@
+version: '2'
+services:
+    
+  flask:
+    build: 
+      context: .
+    image: flask:latest
+    container_name: flask
+    restart: always
+    environment:
+      PG_PASSWORD: ${PG_PASSWORD}     
+      LOGIN_NAME: ${LOGIN_NAME}     
+    ports:
+      - "5000:5000"
+
