@@ -9,7 +9,7 @@ services:
     restart: always
     environment:
       PG_PASSWORD: ${PG_PASSWORD}     
-      LOGIN_NAME: ${LOGIN_NAME}     
+      LOGIN_NAME: ${USER}     
     ports:
       - "5000:5000"
 
